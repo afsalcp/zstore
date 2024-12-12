@@ -1,0 +1,40 @@
+.alert{
+    min-width: 200px;
+    max-width: 90%;
+    min-height: 30px;
+
+    background-color: #5989f16f;
+    
+    border: solid 1.5px #5989f16f;
+    border-radius: 8px;
+
+    position: fixed;
+
+    right: 20px;
+    top: 20px;
+
+    color: white;
+
+    text-shadow: 0 0 2px #1c1212;
+
+    padding-inline: 20px;
+    padding-block: 5px;
+
+    display: grid;
+
+    place-items: center;
+}
+
+.scale_animation{
+    animation: scale_animation 300ms 1 linear;
+
+}
+
+@keyframes scale_animation{
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}

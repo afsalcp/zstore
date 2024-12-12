@@ -1,0 +1,18 @@
+
+#route_changer{
+  transition: 500ms scale;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
+#route_changer.route_change{
+  scale: .8;
+  opacity: .4;
+
+  filter: blur(8px);
+}
+#route_changer.route_stable{
+  scale: unset;
+  opacity: 1;
+}

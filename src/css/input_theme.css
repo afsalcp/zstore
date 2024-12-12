@@ -1,0 +1,12 @@
+.input_themed input::placeholder{
+    color: white;
+
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px black;
+}
+
+.input_themed input:focus{
+    box-shadow: 0 0 5px 2px var(--theme_sub);
+
+    border-color: var(--theme_sub)  ;
+}

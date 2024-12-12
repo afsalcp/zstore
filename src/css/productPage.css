@@ -1,0 +1,29 @@
+#product_page .navigation_btns{
+    padding: 10px;
+
+    background: none;
+
+    
+    border: none;
+
+    color: grey;
+    
+
+    font-weight: bold;
+
+    transition: .3s;
+
+    border-width: 1.4px;
+}
+
+#product_page .navigation_btns:active{
+    scale: 0.8;
+}
+
+
+#product_page .navigation_btns.selected{
+    border: solid 1.4px var(--theme_sub);
+    border-radius: 5px;
+
+    color: var(--theme_sub);
+}

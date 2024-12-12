@@ -1,0 +1,40 @@
+.loading_square{
+    background-color: var(--theme_sub_fade);
+
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.loading_square>.loader{
+    width: 20px;
+    height: 100%;
+
+    background: linear-gradient(to right,#e5e5e532,#f8f0f0,#e5e5e532);
+    
+    position: absolute;
+
+    left: 10px;
+
+    animation: loading_square 1s infinite ;
+}
+
+@keyframes loading_square {
+    0%{
+        left: 1%;
+        opacity: 1;
+        width: 20px;
+    }
+    60%{
+        width: 50px;
+    }
+    95%{
+        opacity: 1;
+        width: 30px;
+    }
+    100%{
+        left: 95%;
+        opacity: 0;
+        width: 20px;
+    }
+}
