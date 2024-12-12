@@ -57,6 +57,7 @@ export default function HomePage(): ReactElement {
     axios.get("/trending-items").then((res: AxiosResponse<Response>) => {
       if (!res.data.sts) {
         dispatch(showAlert({ msg: res.data.msg }));
+        alert('here is the problome')
         setTimeout(
           () => navigator("/", { state: { redirect: "/home" } }),
           1000
